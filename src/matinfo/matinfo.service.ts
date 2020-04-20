@@ -27,7 +27,7 @@ export class MatInfoService {
     return await this.materialInfoModel.findByIdAndUpdate(id, materialInfoDto);
   }
 
-  async delete(id: string, materialInfoDto: MaterialInfoDto): Promise<MaterialInfo> {
+  async delete(id: string): Promise<MaterialInfo> {
     return await this.materialInfoModel.findByIdAndRemove(id);
   }
 }

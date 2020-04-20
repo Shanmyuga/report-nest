@@ -28,7 +28,7 @@ export class MatInfoController {
   }
 
   @Delete(':id')
-  async delete(@Param('id') id: string, @Body() materialInfoDto: MaterialInfoDto) {
-    return this.matInfoService.delete(id, materialInfoDto);
+  async delete(@Param('id') id: string) {
+    return this.matInfoService.delete(id);
   }
 }
